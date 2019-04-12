@@ -1,0 +1,437 @@
+:root{
+    --verdeClaro:#229954;
+    --blanco: #FFFFFF;
+    --negro:#000000;
+    --amarillo:#FFFF00;
+    --lima:#00FF00;
+    --boton:#1ABC9C;
+    --hover:#2874A6  ;
+    --azul:#2471A3;
+    --amarilloPalio:#F7DC6F;
+    --rojo:#EB391D;
+    --gris:#AAB7B8;
+
+    --fuenteEspecial: 'Roboto Slab', serif
+    --fuentePrincipal:'TimesNewRoman', serif,
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*header----------------------------------------------------------------------------------------------------------------------*/
+
+/* Area de estilos para el encabezado del sitio energías renovables*/
+header{
+    margin-bottom: 10px;
+}
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-position: top center;
+    background-size: cover;
+    color: var(--negro);
+    width: 760px;
+    height: 500px;
+    max-width: 100%;
+}
+.clearfix{
+    text-align: left;
+    justify-content: center;
+}
+.contenido-header{
+    padding: 1rem 5rem 5rem 5rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.1rem;
+}
+.contenido-header p{
+    text-align: justify;
+    font-family: var(--fuentePrincipal);
+    width: 100%;
+    color: var(--blanco);
+}
+@media (min-width:760px){
+    .hero {
+        background-image: url(../img/hero.jpg);
+        background-position: top center;
+        background-size: cover;
+        color: var(--negro);
+        width: 100%;
+        height: 870px;
+        max-width: 100%;
+    }
+    .contenido-header{
+        padding: 15rem 5rem 5rem 5rem;
+        font-family: var(--fuentePrincipal);
+        font-size: 1.7rem;
+    }
+    .contenido-header p{
+        text-align: justify;
+        font-family: var(--fuentePrincipal);
+        width: 65%;
+        color: var(--negro);
+    }
+}
+
+.boton{
+    padding: 1rem 3rem;
+    text-decoration: none;
+    background-color: var(--boton);
+    color:var(--blanco);
+    border-radius: 2%;
+    margin-bottom: 1rem;
+    font-size: 17px;
+}
+@media(min-width:768px){
+    .boton{
+        font-size: 24px;
+    }
+}
+.boton:hover{
+    background-color: var(--hover);
+}
+
+.hero{
+    margin-bottom:0px;
+}
+
+
+/*body----------------------------------------------------------------------------------------------------------------------*/
+body{
+    text-align: justify;
+
+}
+.contenido-prncipal{
+    font-size: 1.5rem;
+}
+.linea{
+    height: 1.5px;
+    background-color: var(--rojo);
+}
+/*area de estilos para el contenido principal*/
+
+/*sección para la parte de las opciones de navegación*/
+
+/*opciones gnerales*/
+
+.opciones{
+    margin-top: 1px;
+    background-color: var(--azul);
+}
+.opciones ul{
+    margin-top: 1px;
+    padding: 0px;
+    font-family: var(--fuentePrincipal);
+}
+
+.opciones a{
+    display:  block;
+    text-align: center;
+    color:var(--blanco);
+    padding: 1.5rem 1.6rem;
+    margin-top: 0;
+    text-decoration: none;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.3rem;
+}
+
+.opciones li:hover{
+    background-color:var(--verdeClaro);
+    list-style-type: none;
+    
+}
+
+.laspotenciales,.losmares,.lasnaturales,.loscombustibles{
+    display: none;
+    background-color:#16A085;
+    margin-top: 1px;
+    text-align: center;
+
+}
+.laspotenciales a,.losmares a,.lasnaturales a,.loscombustibles a{
+    padding: 0.6rem;
+}
+@media (min-width:760px){
+    .opciones a{
+        display:  inline-block;
+        margin: 2px; 
+    }
+    .opciones li{
+        display:inline-block;
+        
+    }
+    .laspotenciales,.losmares,.lasnaturales,.loscombustibles{
+        position: absolute;
+        display: none;
+        background-color:#16A085;
+        margin-top: 1px;
+        text-align: center;
+    }
+    .laspotenciales p a{
+        display: inline-block;
+        padding: 0 1rem;
+    }
+    .losmares p a,.lasnaturales p a,.loscombustibles p a{
+        display: inline-block;
+        padding: 0 1rem;
+    }
+}
+/*esstilo para la opción de la definicion y slider*/
+.definicion{
+    margin: 4rem 0;
+}
+/*slider de la páagina principal*/
+.titulo{
+    text-align: center;
+}
+.slider{
+    width: 760px;
+    height: 300px;
+    max-width: 100%;
+    display:block;
+    margin:auto;
+    border-radius: 2%;
+}
+
+
+@media (min-width:760px){
+    .slider{
+        width: 350px;
+        height: 300px;
+        max-width: 100%;
+        max-height: 100%;
+        display:inline-block;
+        margin:auto;
+        padding: 5px;
+        border-radius: 12%;
+        justify-content: left;
+
+    }
+    .Imagenes{
+        display:grid;
+        justify-content: center;
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        grid-gap: 2rem 5rem;
+    }
+    .slider{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .content{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding:2px 2px 2px;
+    }
+}
+/*estilo para la seccion de las curiosidades*/
+
+.curiosidad-genral{
+    display:grid;
+    justify-content: left;
+    grid-template-columns: 4;
+    grid-template-rows: 4;
+    grid-gap: 2rem 4rem;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.curiosidad-imagen{
+    height:250px;
+    width:290px;
+}
+
+.curiosidad1{
+    width: 310px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    transition: all .3s ease;
+    background-color: var(--blanco);
+}
+.curiosidad2{
+    width: 310px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding:2px 2px;
+    transition: all .3s ease;
+    background-color: var(--blanco);
+}
+.curiosidad3{
+    width: 300px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    padding:2px 2px;
+    transition: all .3s ease;
+    background-color: var(--blanco);
+}
+.curiosidad4{
+    width: 300px;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    padding:2px 2px;
+    transition: all .3s ease;
+    background-color: var(--blanco);
+}
+.curiosidad1:hover,.curiosidad2:hover,.curiosidad3:hover,.curiosidad4:hover{
+    transform: scale(1.3);
+    border: .3rem solid var(--azul);
+}
+.titulo-curiosidad{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+@media (min-width:768px){
+    .curiosidad1{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 10px;
+        transition: all .3s ease;
+        background-color: var(--blanco);
+    }
+    .curiosidad2{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding:2px 2px;
+        transition: all .3s ease;
+        background-color: var(--blanco);
+    }
+    .curiosidad3{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        padding:2px 2px;
+        transition: all .3s ease;
+        background-color: var(--blanco);
+    }
+    .curiosidad4{
+        width: 300px;
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+        padding:2px 2px;
+        transition: all .3s ease;
+        background-color: var(--blanco);
+    }
+}
+
+
+/*grid con las diferentes opciones de energía*/
+ul{
+   list-style: none;
+}
+.selecciones{
+    display: inline-block;
+    margin: 1px 5px;
+}
+.opciones-energia img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.A,.B,.C,.D,.E,.F,.G,.H{
+    padding:10px 16px;
+    border-radius: 10%;
+    margin: 1px 5px;
+}
+
+@media (min-width: 760px){
+    .selecciones{
+        display:grid;
+        justify-content: center;
+        grid-template-columns: 3;
+        grid-template-rows: 3;
+        grid-gap: 2rem 10rem;
+        padding:10px;
+        margin-top: 0px;
+    }
+    .A{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding:10px 16px;
+       
+    }
+    .B{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding:10px 16px;
+    }
+    .C{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        padding:10px 16px;
+    }
+}
+
+/*footer--------------------------------------------------------------------------------------------------------------------------------*/
+footer{
+    background-color: var(--azul);
+    color:var(--negro);
+    font-size: 1.5rem;
+}
+.sociales {
+    
+    margin-top: 1PX;
+}
+.redes-sociales {
+    text-align: center;
+}
+.redes-sociales a {
+    color: var(--blanco);
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+.redes-sociales a:last-child {
+    margin-right: 0;
+}
+footer .redes-sociales {
+    text-align: right;
+}
+.contenidoFooter{
+    display:grid;
+    justify-content: left;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-gap: 2rem 1rem;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+.footer-informacion{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 10px;
+    transition: all .3s ease;
+}
+.redes-sociales{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding: 10px;
+    transition: all .3s ease;
+}
+@media(min-width:768px){
+    .footer-informacion{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 10px;
+        transition: all .3s ease;
+    }
+    .redes-sociales{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding: 10px;
+        transition: all .3s ease;
+    }
+}
+.copyright {
+    background-color:var(--verdeClaro);
+    color: var(--colorBlanco);
+    padding: 1rem 0;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
